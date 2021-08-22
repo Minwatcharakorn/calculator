@@ -10,29 +10,27 @@ divide = 4
 Quit = 5
 
 def main():
-    choice = 0
-    while choice != Quit:
+    menu = 0
+    while menu != Quit:
         display_menu()
-        choice = int(input('Enter you choice: '))
-        if choice == add:
+        menu = int(input('Enter you menu: '))
+        if menu == add:
             num1 = int(input('Enter first number: '))
             num2 = int(input('Enter last number: '))
             print('result: ',one.add(num1, num2))
-        elif choice == subtract:
+        elif menu == subtract:
             num1 = int(input('Enter first number: '))
             num2 = int(input('Enter last number: '))
-            print('result: ', \
-                two.subtract(num1, num2))
-        elif choice == multiply:
+            print('result: ',two.subtract(num1, num2))
+        elif menu == multiply:
             num1 = int(input('Enter first number: '))
             num2 = int(input('Enter last number: '))
             print('result: ', three.multiply(num1 , num2))
-        elif choice == divide:
+        elif menu == divide:
             num1 = int(input('Enter first number: '))
             num2 = int(input('Enter last number: '))
-            print('result: ', \
-                four.divide(num1 , num2))
-        elif choice == Quit:
+            print('result: ',four.divide(num1 , num2))
+        elif menu == Quit:
             print('Exiting the program...')
         else:
             print('Error: invalid selection.')
